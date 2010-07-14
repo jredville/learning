@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="BasicMVVM.Views.NumericQuestionView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"      
+    xmlns:Behaviors="clr-namespace:BasicMVVM.Infrastructure.Behaviors"          
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid Margin="5" d:DesignWidth="431" d:DesignHeight="353">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="{Binding QuestionText}" Style="{StaticResource QuestionLabelStyle}" />
+        <Image Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource ToolTipImageStyle}">
+            <ToolTipService.ToolTip>
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap"> This is a Numeric Question, a positive integer value is expected.</TextBlock>
+                    <TextBlock TextWrapping="Wrap"> • To customize the error message shown, the NumericQuestionViewModel validates the format of the input.</TextBlock>
+                    <TextBlock TextWrapping="Wrap"> • The validation of the maximum number accepted (bussiness logic) is performed by the NumericQuestionModel model.</TextBlock>
+                    <TextBlock TextWrapping="Wrap"> • The UpdateTextBindingOnPropertyChanged behavior is used to update the binding whenever a new character is entered, so the input is validated on every entry.</TextBlock>                    
+                </StackPanel>
+                
+            </ToolTipService.ToolTip>
+        </Image>        
+        <TextBox x:Name="textBox" Grid.Column="0" Grid.Row="1" AutomationProperties.AutomationId="NumericQuestionAutomationId">
+            <TextBox.Text>
+                <Binding Path="ResponseValue" 
+                                                             Mode="TwoWay" UpdateSourceTrigger="Default" 
+                                                             ValidatesOnExceptions="True"
+                                                             NotifyOnValidationError="True"/>
+            </TextBox.Text>
+            <i:Interaction.Behaviors>
+                <Behaviors:UpdateTextBindingOnPropertyChanged/>
+            </i:Interaction.Behaviors>
+        </TextBox>
+    </Grid>
+</UserControl>

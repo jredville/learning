@@ -1,0 +1,5 @@
+D:\projects\learning\bartdesmet\Learning\bin\Debug\Utils.dll
+D:\projects\learning\bartdesmet\Learning\bin\Debug\Utils.pdb
+D:\projects\learning\bartdesmet\Learning\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\learning\bartdesmet\Learning\obj\Debug\Utils.dll
+D:\projects\learning\bartdesmet\Learning\obj\Debug\Utils.pdb
