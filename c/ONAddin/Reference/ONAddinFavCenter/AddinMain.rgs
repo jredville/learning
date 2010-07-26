@@ -1,0 +1,23 @@
+HKCR
+{
+	ONAddinFavCenter.AddinMain.1 = s 'AddinMain Class'
+	{
+		CLSID = s '{33DF7A98-49CA-42de-909E-5EF3EE1ED97D}'
+	}
+	ONAddinFavCenter.AddinMain = s 'AddinMain Class'
+	{
+		CLSID = s '{33DF7A98-49CA-42de-909E-5EF3EE1ED97D}'
+		CurVer = s 'ONAddinFavCenter.AddinMain.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {33DF7A98-49CA-42de-909E-5EF3EE1ED97D} = s 'AddinMain Class'
+		{
+			ProgID = s 'ONAddinFavCenter.AddinMain.1'
+			VersionIndependentProgID = s 'ONAddinFavCenter.AddinMain'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			'TypeLib' = s '{A9EF0D18-184D-4C1C-8F5B-3089081D37BB}'
+		}
+	}
+}

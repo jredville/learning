@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'ONAddinFavAdd'
+		'ONAddinFavAdd.EXE'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

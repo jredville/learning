@@ -1,0 +1,62 @@
+// ONAddinFavCenter.idl : IDL source for ONAddinFavCenter
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ONAddinFavCenter.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+// Events
+typedef [uuid(AAE363E2-3D91-4b0c-9021-EFDA0ACBD858)]
+	enum OneNoteAddIn_Event {
+		evtAddInNavigation        = 0, // Parameter is the newly active page id (empty if there is no active page)
+		evtAddInHierarchyChange   = 1, // Parameter is the ObjectID of the hierarchy object that changed
+	} OneNoteAddIn_Event;
+
+[
+	object,
+	uuid(C9590FA7-2132-47fb-9A78-AF0BF19AF4E6),
+	dual,
+	helpstring("IOneNoteAddIn Interface"),
+	pointer_default(unique)
+]
+interface IOneNoteAddIn : IDispatch
+{
+	/*
+		Button was clicked.
+		strActivePageID is the currently active page (note: might be empty, if there is no active page)
+		pfEnabled indicates whether or not the addin button should be enabled
+	*/
+	HRESULT OnClick(
+		[in]BSTR bstrActivePageID,
+		[out, retval]VARIANT_BOOL * pfEnabled);
+
+	/*
+		Event occurred.
+		strParameter depends on the event (see OneNoteAddIn_Event definition)
+		pfEnabled indicates whether or not the addin button should be enabled (true = enabled)
+	*/
+	HRESULT OnEvent(
+		[in]OneNoteAddIn_Event evt,
+		[in]BSTR bstrParameter,
+		[out, retval]VARIANT_BOOL * pfEnabled);
+};
+
+[
+	uuid(A9EF0D18-184D-4C1C-8F5B-3089081D37BB),
+	version(1.0),
+	helpstring("ONAddinFavCenter 1.0 Type Library")
+]
+library ONAddinFavCenterLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(33DF7A98-49CA-42de-909E-5EF3EE1ED97D),
+		helpstring("AddinMain Class")
+	]
+	coclass AddinMain
+	{
+		[default] interface IOneNoteAddIn;
+	};
+};

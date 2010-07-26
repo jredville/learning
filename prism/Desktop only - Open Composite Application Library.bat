@@ -1,1 +1,0 @@
-@call "CAL\CompositeApplicationLibrary_desktop.sln"

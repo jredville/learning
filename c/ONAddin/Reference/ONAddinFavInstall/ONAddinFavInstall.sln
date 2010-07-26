@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ONAddinFavInstall", "ONAddinFavInstall.vdproj", "{6BB0041D-1477-429A-8390-62D1AD087485}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BB0041D-1477-429A-8390-62D1AD087485}.Debug|Default.ActiveCfg = Debug
+		{6BB0041D-1477-429A-8390-62D1AD087485}.Debug|Default.Build.0 = Debug
+		{6BB0041D-1477-429A-8390-62D1AD087485}.Release|Default.ActiveCfg = Release
+		{6BB0041D-1477-429A-8390-62D1AD087485}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

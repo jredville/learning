@@ -1,0 +1,222 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""ONAddinFavCenter.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,6,2,1
+ PRODUCTVERSION 1,6,2,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Made By Shu Chen"
+            VALUE "CompanyName", "Microsoft"
+            VALUE "FileVersion", "1.6.2.1"
+            VALUE "InternalName", "ONAddinFavCenter.dll"
+            VALUE "LegalCopyright", "(c) Microsoft.  All rights reserved."
+            VALUE "OriginalFilename", "ONAddinFavCenter.dll"
+            VALUE "ProductName", "OneNote Favorites AddIn"
+            VALUE "ProductVersion", "1.6.2.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_ONADDINFAVCENTER    REGISTRY                "ONAddinFavCenter.rgs"
+IDR_ADDINMAIN           REGISTRY                "AddinMain.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADDINDLG DIALOGEX 0, 0, 224, 278
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "OneNote Favorites Center"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TREE_FAVORITES,"SysTreeView32",TVS_EDITLABELS | TVS_TRACKSELECT | TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,5,4,213,253
+    CONTROL         "Pin",IDC_CHK_PIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,258,23,16
+    CONTROL         "Expand/Collapse",IDC_CHK_EXPAND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,258,66,16
+    CONTROL         "Open in New Window",IDC_CHK_NEWWIN,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,0,174,83,16
+    CONTROL         "",IDC_COMBO_TYPE,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,96,261,55,120
+    PUSHBUTTON      "Go to List View",IDC_BTN_LISTVIEW,148,258,70,16
+END
+
+IDD_ADDINLISTVIEWDLG DIALOGEX 0, 0, 226, 278
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "OneNote Favorites Center"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST_FAVORITES,"SysListView32",LVS_REPORT | LVS_SORTASCENDING | LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,5,4,215,251
+    CONTROL         "Pin",IDC_CHK_PIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,258,23,16
+    PUSHBUTTON      "Go to Tree View",IDC_BTN_TREEVIEW,151,257,69,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ADDINDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 223
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_ADDINLISTVIEWDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 220
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 273
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_CONTEXT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Open",                       ID_POPUP_OPEN
+        MENUITEM "Open in &New Window",         ID_POPUP_OPENINNEWWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename",                     ID_POPUP_RENAME
+        MENUITEM "&Delete",                     ID_POPUP_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Properties...",               ID_POPUP_PROPERTIES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_TITLE          ICON                    "title.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_NOTEBOOK        BITMAP                  "notebook.bmp"
+IDB_BMP_PAGE            BITMAP                  "page.bmp"
+IDB_BMP_SECTION         BITMAP                  "section.bmp"
+IDB_BMP_SECTIONGROUP    BITMAP                  "section_group.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "ONAddinFavCenter"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "ONAddinFavCenter.tlb"
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "ONAddinFavCenter.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

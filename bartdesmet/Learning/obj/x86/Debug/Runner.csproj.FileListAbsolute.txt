@@ -1,5 +1,0 @@
-D:\projects\learning\bartdesmet\Learning\bin\Debug\Runner.exe
-D:\projects\learning\bartdesmet\Learning\bin\Debug\Runner.pdb
-D:\projects\learning\bartdesmet\Learning\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\projects\learning\bartdesmet\Learning\obj\x86\Debug\Runner.exe
-D:\projects\learning\bartdesmet\Learning\obj\x86\Debug\Runner.pdb

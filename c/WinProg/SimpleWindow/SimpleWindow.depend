@@ -1,0 +1,454 @@
+# depslib dependency file v1.0
+1280040529 source:d:\projects\learning\c\winprog\simplewindow\main.cpp
+	<tchar.h>
+	<windows.h>
+	"resource.h"
+	"main.h"
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\windows.h
+	<sdkddkver.h>
+	<winresrc.h>
+	<excpt.h>
+	<stdarg.h>
+	<windef.h>
+	<winbase.h>
+	<wingdi.h>
+	<winuser.h>
+	<winnls.h>
+	<wincon.h>
+	<winver.h>
+	<winreg.h>
+	<winnetwk.h>
+	<cderr.h>
+	<dde.h>
+	<ddeml.h>
+	<dlgs.h>
+	<lzexpand.h>
+	<mmsystem.h>
+	<nb30.h>
+	<rpc.h>
+	<shellapi.h>
+	<winperf.h>
+	<winsock.h>
+	<wincrypt.h>
+	<winefs.h>
+	<winscard.h>
+	<winspool.h>
+	<ole.h>
+	<ole2.h>
+	<commdlg.h>
+	<stralign.h>
+	<winwlm.h>
+	<ole2.h>
+	<winsvc.h>
+	<mcx.h>
+	<imm.h>
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sdkddkver.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winresrc.h
+	<winuser.rh>
+	<commctrl.rh>
+	<dde.rh>
+	<winnt.rh>
+	<dlgs.h>
+	<winver.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winuser.rh
+
+1254367628 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\commctrl.rh
+
+1254367630 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\dde.rh
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winnt.rh
+
+1254367630 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\dlgs.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winver.h
+	<SpecStrings.h>
+	<verrsrc.h>
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\specstrings.h
+	"sal_supp.h"
+	"specstrings_supp.h"
+	<sal.h>
+	<specstrings_strict.h>
+	<driverspecs.h>
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sal_supp.h
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\specstrings_supp.h
+	"sal_supp.h"
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\specstrings_strict.h
+	<specstrings_undef.h>
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\specstrings_undef.h
+
+1254367630 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\driverspecs.h
+	<specstrings.h>
+	"sdv_driverspecs.h"
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sdv_driverspecs.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\verrsrc.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\windef.h
+	<winnt.h>
+	<specstrings.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winnt.h
+	<ctype.h>
+	<specstrings.h>
+	<kernelspecs.h>
+	<basetsd.h>
+	<guiddef.h>
+	<excpt.h>
+	<sdkddkver.h>
+	"pshpack4.h"
+	"poppack.h"
+	"pshpack4.h"
+	"poppack.h"
+	<pshpack4.h>
+	<poppack.h>
+	"pshpack4.h"
+	"pshpack2.h"
+	"pshpack1.h"
+	"poppack.h"
+	"pshpack2.h"
+	<pshpack2.h>
+	<poppack.h>
+	"poppack.h"
+	"pshpack8.h"
+	"poppack.h"
+	"poppack.h"
+	<string.h>
+	<string.h>
+	<ktmtypes.h>
+
+1254367632 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\kernelspecs.h
+	"DriverSpecs.h"
+
+1254367628 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\basetsd.h
+
+1254367632 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\guiddef.h
+	<string.h>
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack4.h
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack2.h
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack1.h
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack8.h
+
+1254367632 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ktmtypes.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winbase.h
+	<macwin32.h>
+	<winerror.h>
+	"winbase.inl"
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winerror.h
+	<specstrings.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winbase.inl
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\wingdi.h
+	<macwin32.h>
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack2.h>
+	<poppack.h>
+	<pshpack2.h>
+	<poppack.h>
+	<pshpack4.h>
+	<poppack.h>
+	<pshpack4.h>
+	<poppack.h>
+	"pshpack4.h"
+	"poppack.h"
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winuser.h
+	<macwin32.h>
+	<stdarg.h>
+	<pshpack2.h>
+	<poppack.h>
+	<tvout.h>
+	"winuser.inl"
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\tvout.h
+	<guiddef.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winuser.inl
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winnls.h
+	<macwin32.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\wincon.h
+	<wingdi.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winreg.h
+	<macwin32.h>
+	<reason.h>
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\reason.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winnetwk.h
+	<wnnc.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\wnnc.h
+
+1254367628 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\cderr.h
+
+1254367630 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\dde.h
+	<windef.h>
+
+1254367630 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ddeml.h
+
+1254367634 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\lzexpand.h
+
+1254367634 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\mmsystem.h
+	<pshpack1.h>
+	<macwin32.h>
+	<poppack.h>
+
+1254367634 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\nb30.h
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpc.h
+	<windows.h>
+	<pshpack2.h>
+	<basetsd.h>
+	<pshpack8.h>
+	<setjmp.h>
+	<rpcdce.h>
+	<rpcnsi.h>
+	<rpcerr.h>
+	<rpcmac.h>
+	<poppack.h>
+	<rpcdce.h>
+	<rpcnsi.h>
+	<rpcnterr.h>
+	<excpt.h>
+	<winerror.h>
+	<rpcasync.h>
+	<poppack.h>
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpcdce.h
+	<specstrings.h>
+	<guiddef.h>
+	<rpcdcep.h>
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpcdcep.h
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpcnsi.h
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpcnterr.h
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpcasync.h
+	<pshpack8.h>
+	<ntddk.h>
+	<windef.h>
+	<poppack.h>
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\shellapi.h
+	<SpecStrings.h>
+	<pshpack1.h>
+	<poppack.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winperf.h
+	<pshpack8.h>
+	<poppack.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winsock.h
+	<windows.h>
+	<inaddr.h>
+
+1254367632 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\inaddr.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\wincrypt.h
+	<specstrings.h>
+	<bcrypt.h>
+	<ncrypt.h>
+
+1254367628 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\bcrypt.h
+
+1254367634 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ncrypt.h
+	<bcrypt.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winefs.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winscard.h
+	<wtypes.h>
+	<winioctl.h>
+	"winsmcrd.h"
+	"SCardErr.h"
+
+1254367642 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\wtypes.h
+	"rpc.h"
+	"rpcndr.h"
+	"basetsd.h"
+	"guiddef.h"
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpcndr.h
+	<pshpack8.h>
+	<basetsd.h>
+	<rpcnsip.h>
+	<rpcsal.h>
+	<poppack.h>
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpcnsip.h
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpcsal.h
+	<specstrings.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winioctl.h
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack1.h>
+	<poppack.h>
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winsmcrd.h
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\scarderr.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winspool.h
+	<prsht.h>
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\prsht.h
+	<pshpack8.h>
+	<pshpack4.h>
+	"prsht.inl"
+	<poppack.h>
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\prsht.inl
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ole.h
+	<pshpack1.h>
+	<poppack.h>
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ole2.h
+	<pshpack8.h>
+	<winerror.h>
+	<objbase.h>
+	<oleauto.h>
+	<oleidl.h>
+	<poppack.h>
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\objbase.h
+	<rpc.h>
+	<rpcndr.h>
+	<pshpack8.h>
+	<stdlib.h>
+	<wtypes.h>
+	<unknwn.h>
+	<objidl.h>
+	<guiddef.h>
+	<cguid.h>
+	<urlmon.h>
+	<propidl.h>
+	<poppack.h>
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\unknwn.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"wtypes.h"
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\objidl.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"unknwn.h"
+
+1254367628 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\cguid.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\urlmon.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+	"oleidl.h"
+	"servprov.h"
+	"msxml.h"
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\oleidl.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\servprov.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+
+1254367634 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\msxml.h
+	"rpc.h"
+	"rpcndr.h"
+	"unknwn.h"
+	"objidl.h"
+	"oaidl.h"
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\oaidl.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\propidl.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+	"oaidl.h"
+
+1254367636 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\oleauto.h
+	<pshpack8.h>
+	<oaidl.h>
+	<poppack.h>
+
+1254367628 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\commdlg.h
+	<prsht.h>
+	<pshpack1.h>
+	"commdlg.inl"
+	<poppack.h>
+
+1254367628 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\commdlg.inl
+
+1254367638 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\stralign.h
+
+1254367640 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winsvc.h
+
+1254367634 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\mcx.h
+
+1254367632 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\imm.h
+	<ime_cmodes.h>
+
+1254367632 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\ime_cmodes.h
+
+1280011205 source:d:\projects\learning\c\winprog\simplewindow\resource.rc
+	"resource.h"
+
+1280011052 d:\projects\learning\c\winprog\simplewindow\resource.h
+
+1280010966 d:\projects\learning\c\winprog\simplewindow\main.h
+

@@ -1,7 +1,0 @@
-D:\projects\learning\bartdesmet\Learning\Utils\obj\Debug\ResolveAssemblyReference.cache
-D:\projects\learning\bartdesmet\Learning\Utils\bin\Debug\Utils.dll
-D:\projects\learning\bartdesmet\Learning\Utils\bin\Debug\Utils.pdb
-D:\projects\learning\bartdesmet\Learning\Utils\bin\Debug\Runner.exe
-D:\projects\learning\bartdesmet\Learning\Utils\bin\Debug\Runner.pdb
-D:\projects\learning\bartdesmet\Learning\Utils\obj\Debug\Utils.dll
-D:\projects\learning\bartdesmet\Learning\Utils\obj\Debug\Utils.pdb

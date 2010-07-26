@@ -1,0 +1,2 @@
+int DisplayMouseDialog(HWND hwnd);
+
