@@ -1,0 +1,115 @@
+<html>
+<head>
+    <script type="text/javascript" src="jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="Rx_JS\rx.js"></script>
+    <script type="text/javascript" src="Rx_JS\rx.html.js"></script>
+    <script type="text/javascript" src="jash_source.js"></script>
+    <script type="text/javascript">
+        var sample = function(spec) {
+            var that = {};
+
+            that.addHeader = function(el) {
+                $("<h1/>").text(spec.name).appendTo(el);
+            };
+            that.name = spec.name;
+            that.addElements = function(el) {
+                for(var i = 0; i < spec.elements.length; i++) {
+                    $.apply(null, spec.elements).appendTo(el);
+                }
+            }
+            that.execute = spec.execute;
+
+            return that;
+        };
+
+        var samples = [];
+        var addSample = function(spec) {
+            samples.push(sample(spec));
+        }
+
+        addSample({
+           name: "basic javascript",
+           elements: [["<div>drag me</div>", {id:"mouseDragMe2"}],
+                      ["<div />", {id:"results2"}]],
+           execute = function(){
+            var mouseDragMe = $("#mouseDragMe2").context;
+
+            var mouseMove = Rx.Observable.FromHtmlEvent(mouseDragMe, "mousemove");
+            var mouseUp = Rx.Observable.FromHtmlEvent(mouseDragMe, "mouseup");
+            var mouseDown = Rx.Observable.FromHtmlEvent(mouseDragMe, "mousedown");
+
+            var mouseMoves = mouseMove.Skip(1)
+                .Zip(mouseMove, function(left,right){
+                return {x1 : left.clientX,
+                        y1 : left.clientY,
+                        x2 : right.clientX,
+                        y2 : right.clientY};
+            });
+
+            var mouseDrags = mouseDown.SelectMany(function(md) {
+                return mouseMoves.TakeUntil(mouseUp);
+            });
+
+            mouseDrags.Subscribe(function(mouseEvents){
+                $("#results2").html(
+                    "Old (X: " + mouseEvents.x1 + " Y: " + mouseEvents.y1 + ") " +
+                    "New (X: " + mouseEvents.x2 + " Y: " + mouseEvents.y2 + ")");
+            });
+        }});
+
+        $(function(){
+            var mouseDragMe = $("#mouseDragMe").context;
+
+            var mouseMove = Rx.Observable.FromHtmlEvent(mouseDragMe, "mousemove");
+            var mouseUp = Rx.Observable.FromHtmlEvent(mouseDragMe, "mouseup");
+            var mouseDown = Rx.Observable.FromHtmlEvent(mouseDragMe, "mousedown");
+
+            var mouseMoves = mouseMove.Skip(1)
+                .Zip(mouseMove, function(left,right){
+                return {x1 : left.clientX,
+                        y1 : left.clientY,
+                        x2 : right.clientX,
+                        y2 : right.clientY};
+            });
+
+            var mouseDrags = mouseDown.SelectMany(function(md) {
+                return mouseMoves.TakeUntil(mouseUp);
+            });
+
+            mouseDrags.Subscribe(function(mouseEvents){
+                $("#results").html(
+                    "Old (X: " + mouseEvents.x1 + " Y: " + mouseEvents.y1 + ") " +
+                    "New (X: " + mouseEvents.x2 + " Y: " + mouseEvents.y2 + ")");
+            });
+        });
+    </script>
+    <style>
+        article, aside, figure, footer, header, hgroup, 
+        menu, nav, section { display: block; }
+        canvas { border: 1px solid black; }
+        #error { 
+            background:none repeat scroll 0 0 red;
+            float:right;
+            margin:10px;
+            padding:10px;
+        }
+        #mouseDragMe {
+            border: 10px;
+            padding: 10px;
+            background: blue;
+        }
+        h1 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+      <h1>First</h1>
+      <div id="mouseDragMe">text</div>
+      <div id="results"/>
+    </section>
+    <section id="target"></section>
+</body>
+
+</html>
