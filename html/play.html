@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>Mandlebrot</title>
+  <script type="text/javascript" src="jquery-1.4.2.js" ></script>
+  <script type="text/javascript"> 
+function grid(step, ctx) {
+  w = ctx.canvas.width;
+  h = ctx.canvas.height;
+        
+  dx = step; //pixels per unit
+  dy = step; //pixels per unit
+  // Set line styles
+  ctx.strokeStyle = '#09f';
+  ctx.lineWidth = 1; 
+  for (var x = dx; x < w; x += dx) {
+    for (var y = dy; y < h; y += dy) {
+      ctx.beginPath();
+      ctx.moveTo(x,0);
+      ctx.lineTo(x,h);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(0,y);
+      ctx.lineTo(w, y);
+      ctx.stroke();
+    }
+  }
+}
+function error(txt) {
+  $("#error").append("<p>" + txt + "<p>");
+}
+
+function Complex(real, im) {
+
+}
+
+function draw() {
+  var ctx = $("#canvas")[0].getContext('2d');
+  grid(10, ctx);
+  ctx.strokeStyle = '#333';
+  ctx.lineWidth = 2;
+  stepx = ctx.canvas.width/2;
+  stepy = ctx.canvas.height/2;
+  ctx.translate(stepx, stepy);
+  ctx.beginPath();
+  ctx.moveTo(-stepx,0);
+  ctx.lineTo(stepx,0);
+  ctx.moveTo(0,-stepy);
+  ctx.lineTo(0, stepy);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(-stepx,0);
+  for (var x =-stepx;x < stepx; x++) {
+    ctx.lineTo(x, 10*Math.sin(0.08*x));
+  }
+  ctx.stroke();
+}
+
+$(draw);
+  </script>
+<meta charset="utf-8">
+<style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+  canvas { border: 1px solid black; }
+  #error { background:none repeat scroll 0 0 red;
+float:right;
+margin:10px;
+padding:10px;
+  }
+</style>
+</head>
+<body> 
+  <h1>Mandlebrot</h1>
+  <canvas height="400" width="500" id="canvas"></canvas>
+  <div id="error"></div>
+
+</body></html>
+
