@@ -1,0 +1,12 @@
+<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:cal="clr-namespace:Microsoft.Practices.Composite.Presentation.Commands;assembly=Microsoft.Practices.Composite.Presentation" xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows" x:Class="StockTraderRI.Modules.Position.Orders.OrderCommandsView"
+    >
+    <Grid Margin="0,0,10,10" HorizontalAlignment="Stretch" >
+        <StackPanel Height="Auto" VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button cal:Click.Command="{Binding Mode=OneWay, Path=SubmitCommand}" Content="Submit" AutomationProperties.AutomationId="OrderCommandSubmit" Template="{StaticResource SubmitButtonTemplate}" Cursor="Hand" />
+            <Button cal:Click.Command="{Binding Mode=OneWay, Path=CancelCommand}" Content="Cancel" AutomationProperties.AutomationId="OrderCommandCancel" Template="{StaticResource CancelButtonTemplate}" Cursor="Hand" />
+        </StackPanel>
+    </Grid>
+</UserControl>

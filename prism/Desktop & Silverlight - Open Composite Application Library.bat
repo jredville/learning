@@ -1,0 +1,1 @@
+@call "CAL\CompositeApplicationLibrary.sln"

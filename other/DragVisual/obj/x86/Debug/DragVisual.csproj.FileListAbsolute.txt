@@ -1,0 +1,26 @@
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\bin\Debug\DragVisual.exe
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\bin\Debug\DragVisual.pdb
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\MainWindow.baml
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\MainWindow.g.cs
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\App.g.cs
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\DragVisual_MarkupCompile.cache
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\DragVisual.g.resources
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\DragVisual.Properties.Resources.resources
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\DragVisual.exe
+C:\Users\LPowers.REDMOND\Documents\~Team\Special Projects\Patterns Library\Patterns19-28\21WPF-DragVisual\DragVisual\obj\x86\Debug\DragVisual.pdb
+D:\projects\garage\learning\DragVisual\bin\Debug\DragVisual.exe
+D:\projects\garage\learning\DragVisual\bin\Debug\DragVisual.pdb
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\MainWindow.baml
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\MainWindow.g.cs
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\App.g.cs
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\DragVisual_MarkupCompile.cache
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\DragVisual.g.resources
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\DragVisual.Properties.Resources.resources
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\DragVisual.exe
+D:\projects\garage\learning\DragVisual\obj\x86\Debug\DragVisual.pdb

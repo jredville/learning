@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DragDrop">
+</Property><Property Name="Solution File" Value="D:\projects\garage\learning\DragDrop\DragDrop.sln">
+</Property><Property Name="User Options File" Value="D:\projects\garage\learning\DragDrop\DragDrop.suo">
+</Property><Property Name="Date" Value="Thursday, July 01, 2010">
+</Property><Property Name="Time" Value="19:43 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DragDrop.sln" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\DragDrop.sln">
+</Event><Event ErrorLevel="0" Project="" Source="DragDrop.suo" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\DragDrop.suo">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="DragDrop.csproj" Description="Project file successfully backed up as D:\projects\garage\learning\DragDrop\Backup\DragDrop.csproj">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="App.xaml.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="CanvasExample\CanvasDragDropAdvisor.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\CanvasExample\CanvasDragDropAdvisor.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="CanvasExample\DragCanvasExample.xaml.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\CanvasExample\DragCanvasExample.xaml.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="DragDropManager\DragDropManager.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\DragDropManager\DragDropManager.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="DragDropManager\DropPreviewAdorner.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\DragDropManager\DropPreviewAdorner.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="DragDropManager\DragSourceBase.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\DragDropManager\DragSourceBase.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="DragDropManager\DropTargetBase.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\DragDropManager\DropTargetBase.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="PanelExample\DefaultDragSourceAdvisor.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\PanelExample\DefaultDragSourceAdvisor.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="PanelExample\DefaultDropTargetAdvisor.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\PanelExample\DefaultDropTargetAdvisor.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="PanelExample\PanelExample.xaml.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\PanelExample\PanelExample.xaml.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="Properties\Settings.settings" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="Properties\Resources.resx" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="App.xaml" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\App.xaml">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="CanvasExample\DragCanvasExample.xaml" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\CanvasExample\DragCanvasExample.xaml">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="PanelExample\PanelExample.xaml" Description="File successfully backed up as D:\projects\garage\learning\DragDrop\Backup\PanelExample\PanelExample.xaml">
+</Event><Event ErrorLevel="1" Project="DragDrop" Source="DragDrop.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="DragDrop.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DragDrop" Source="DragDrop.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="DragDrop.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="DragDrop.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DragDrop" Source="DragDrop.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

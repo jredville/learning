@@ -41,6 +41,7 @@
       <HintPath>..\..\..\ext\System.CoreEx.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Interactive">
       <HintPath>..\..\..\ext\System.Interactive.dll</HintPath>
     </Reference>
@@ -73,12 +74,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ViewModels\CanvasViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Utils\FractalCalculator.cs" />
     <Compile Include="Models\FractalCalculator.cs" />
     <Compile Include="Models\MandelbrotModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -104,7 +107,16 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ReactiveXaml\ReactiveXaml.Blend\ReactiveXaml.Blend.csproj">
+      <Project>{3870EA63-AFDF-4D49-B4D6-8299506E67B4}</Project>
+      <Name>ReactiveXaml.Blend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReactiveXaml\ReactiveXaml\ReactiveXaml.csproj">
+      <Project>{292A477B-BB94-43C1-984E-E177EF9FEDB7}</Project>
+      <Name>ReactiveXaml</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

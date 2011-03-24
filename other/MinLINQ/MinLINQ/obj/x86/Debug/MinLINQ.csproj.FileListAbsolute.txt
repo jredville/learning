@@ -1,0 +1,8 @@
+D:\projects\garage\learning\MinLINQ\MinLINQ\bin\Debug\MinLINQ.exe
+D:\projects\garage\learning\MinLINQ\MinLINQ\bin\Debug\MinLINQ.pdb
+D:\projects\garage\learning\MinLINQ\MinLINQ\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\projects\garage\learning\MinLINQ\MinLINQ\obj\x86\Debug\MinLINQ.Properties.Resources.resources
+D:\projects\garage\learning\MinLINQ\MinLINQ\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\projects\garage\learning\MinLINQ\MinLINQ\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\projects\garage\learning\MinLINQ\MinLINQ\obj\x86\Debug\MinLINQ.exe
+D:\projects\garage\learning\MinLINQ\MinLINQ\obj\x86\Debug\MinLINQ.pdb

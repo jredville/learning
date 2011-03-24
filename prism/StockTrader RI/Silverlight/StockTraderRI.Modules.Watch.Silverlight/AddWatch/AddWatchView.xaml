@@ -1,0 +1,15 @@
+<UserControl x:Class="StockTraderRI.Modules.Watch.AddWatch.AddWatchView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Infrastructure="clr-namespace:StockTraderRI.Infrastructure;assembly=StockTraderRI.Infrastructure">
+    <Border Height="30" Width="100" Background="{x:Null}" CornerRadius="12,12,12,12" Margin="0,0,0,0" x:Name="centerHeader" Opacity="0.9" BorderBrush="#FFFFFFFF" BorderThickness="2,2,2,2">
+        <TextBox x:Name="txtAddToWatchList" 
+                 Infrastructure:ReturnKey.Command="{Binding Path=AddWatchCommand}" 
+                 Infrastructure:ReturnKey.DefaultTextAfterCommandExecution="Add to Watch List" 
+                 Text="Add to Watch List" FontFamily="Trebuchet MS" HorizontalAlignment="Center" 
+                 VerticalAlignment="Center" Margin="5,5,5,5" Width="Auto" FontSize="9" 
+                 BorderBrush="{x:Null}" SelectionBackground="#FF000000" Foreground="#FFFFFFFF" 
+                 Background="{x:Null}" SelectionForeground="#FFFFFFFF" BorderThickness="0,0,0,0"
+                 AutomationProperties.AutomationId="TextBoxBlock" />
+    </Border>
+</UserControl>

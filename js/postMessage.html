@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Message</title>
+		<script src="jquery-1.4.2.js"></script>
+		<script>
+		var abc = 0;
+		$(function() {
+			var iframe = $("<iframe id='iframe1'></iframe>").appendTo("body")[0];
+			
+			var win = iframe.contentWindow;
+			var doc = win.document;
+			doc.open();
+			doc.close();
+			$("body", doc).append("<div id='diva'>start</div>");
+			
+			win.setInterval(function() {
+				abc = 0;
+				$('#diva', doc).html(".");
+				for(var x = 0; x < 1000; x++) {
+					abc++;
+					doc.getElementById("diva").innerHTML += ".";
+				};
+				win.parent.postMessage(abc, "*");
+			}, 1000);
+			addEventListener("message", function(e) {
+				var n = document.getElementById("notifications");
+				var d = document.createElement("div");
+				d.innerHTML = e.data;
+				n.appendChild(d);
+				document.getElementById("divb").innerHTML = "start";
+			});
+			setInterval(function() {
+				document.getElementById("divb").innerHTML += ".";
+				}, 50);
+			});
+		</script>
+		<meta charset="utf-8">
+		<style>
+		  article, aside, figure, footer, header, hgroup, 
+		  menu, nav, section, canvas { display: block; }
+		  canvas { border: 1px solid black; }
+		  #error { background:none repeat scroll 0 0 red;
+		float:right;
+		margin:10px;
+		padding:10px;
+		  }
+		</style>
+	</head>
+	<body> 
+		<div id="divb">start</div>
+		<section id="content"></section>
+		<section id="notifications"></section>
+	</body>
+</html>
+

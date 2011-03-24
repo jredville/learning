@@ -1,0 +1,8 @@
+C:\projects\learning\mandelbrot\cs\Mandelbrot\xpaulbettsx-ReactiveXaml-3740819\ReactiveXaml\bin\Debug\ReactiveXaml.dll
+C:\projects\learning\mandelbrot\cs\Mandelbrot\xpaulbettsx-ReactiveXaml-3740819\ReactiveXaml\bin\Debug\ReactiveXaml.pdb
+C:\projects\learning\mandelbrot\cs\Mandelbrot\xpaulbettsx-ReactiveXaml-3740819\ReactiveXaml\bin\Debug\System.CoreEx.dll
+C:\projects\learning\mandelbrot\cs\Mandelbrot\xpaulbettsx-ReactiveXaml-3740819\ReactiveXaml\bin\Debug\System.Interactive.dll
+C:\projects\learning\mandelbrot\cs\Mandelbrot\xpaulbettsx-ReactiveXaml-3740819\ReactiveXaml\bin\Debug\System.Reactive.dll
+C:\projects\learning\mandelbrot\cs\Mandelbrot\xpaulbettsx-ReactiveXaml-3740819\ReactiveXaml\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\learning\mandelbrot\cs\Mandelbrot\xpaulbettsx-ReactiveXaml-3740819\ReactiveXaml\obj\Debug\ReactiveXaml.dll
+C:\projects\learning\mandelbrot\cs\Mandelbrot\xpaulbettsx-ReactiveXaml-3740819\ReactiveXaml\obj\Debug\ReactiveXaml.pdb

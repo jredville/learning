@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0D65CA9-810F-4FEC-9CB8-D8943FF28A9D}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Practices.Composite.Presentation</RootNamespace>
+    <AssemblyName>Microsoft.Practices.Composite.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>false</ThrowErrorsInValidation><FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <DocumentationFile>Bin\Debug\Microsoft.Practices.Composite.Presentation.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <DocumentationFile>Bin\Release\Microsoft.Practices.Composite.Presentation.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LIB\Silverlight\ServiceLocation\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Bootstrapper.cs">
+      <Link>Bootstrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Commands\ButtonBaseClickCommandBehavior.cs">
+      <Link>Commands\ButtonBaseClickCommandBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Commands\Click.cs">
+      <Link>Commands\Click.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Commands\CommandBehaviorBase.cs">
+      <Link>Commands\CommandBehaviorBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Commands\CompositeCommand.cs">
+      <Link>Commands\CompositeCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Commands\DelegateCommand.cs">
+      <Link>Commands\DelegateCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Commands\WeakEventHandlerManager.cs">
+      <Link>Commands\WeakEventHandlerManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Events\CompositePresentationEvent.cs">
+      <Link>Events\CompositePresentationEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Events\WeakDelegatesManager.cs">
+      <Link>Events\WeakDelegatesManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\ObservableObject.cs">
+      <Link>ObservableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Properties\Resources.Designer.cs">
+      <Link>Properties\Resources.Designer.cs</Link>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Events\DispatcherEventSubscription.cs">
+      <Link>Events\DispatcherEventSubscription.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Events\IDispatcherFacade.cs">
+      <Link>Events\IDispatcherFacade.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Events\ThreadOption.cs">
+      <Link>Events\ThreadOption.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\AllActiveRegion.cs">
+      <Link>Regions\AllActiveRegion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\Behaviors\AutoPopulateRegionBehavior.cs">
+      <Link>Regions\Behaviors\AutoPopulateRegionBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\Behaviors\BindRegionContextToDependencyObjectBehavior.cs">
+      <Link>Regions\Behaviors\BindRegionContextToDependencyObjectBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\Behaviors\DelayedRegionCreationBehavior.cs">
+      <Link>Regions\Behaviors\DelayedRegionCreationBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\Behaviors\IHostAwareRegionBehavior.cs">
+      <Link>Regions\Behaviors\IHostAwareRegionBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\Behaviors\RegionActiveAwareBehavior.cs">
+      <Link>Regions\Behaviors\RegionActiveAwareBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\Behaviors\RegionCreationException.cs">
+      <Link>Regions\Behaviors\RegionCreationException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\Behaviors\RegionManagerRegistrationBehavior.cs">
+      <Link>Regions\Behaviors\RegionManagerRegistrationBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\Behaviors\SelectorItemsSourceSyncBehavior.cs">
+      <Link>Regions\Behaviors\SelectorItemsSourceSyncBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\Behaviors\SyncRegionContextWithHostBehavior.cs">
+      <Link>Regions\Behaviors\SyncRegionContextWithHostBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\ContentControlRegionAdapter.cs">
+      <Link>Regions\ContentControlRegionAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\DefaultRegionManagerAccessor.cs">
+      <Link>Regions\DefaultRegionManagerAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\IRegionBehaviorFactory.cs">
+      <Link>Regions\IRegionBehaviorFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\IRegionManagerAccessor.cs">
+      <Link>Regions\IRegionManagerAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\ItemMetadata.cs">
+      <Link>Regions\ItemMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\ItemsControlRegionAdapter.cs">
+      <Link>Regions\ItemsControlRegionAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\Region.cs">
+      <Link>Regions\Region.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\RegionAdapterBase.cs">
+      <Link>Regions\RegionAdapterBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\RegionAdapterMappings.cs">
+      <Link>Regions\RegionAdapterMappings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\RegionBehavior.cs">
+      <Link>Regions\RegionBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\RegionBehaviorCollection.cs">
+      <Link>Regions\RegionBehaviorCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\RegionBehaviorFactory.cs">
+      <Link>Regions\RegionBehaviorFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\RegionContext.cs">
+      <Link>Regions\RegionContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\RegionManager.cs">
+      <Link>Regions\RegionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\RegionViewRegistry.cs">
+      <Link>Regions\RegionViewRegistry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\SelectorRegionAdapter.cs">
+      <Link>Regions\SelectorRegionAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\SingleActiveRegion.cs">
+      <Link>Regions\SingleActiveRegion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\UpdateRegionsException.cs">
+      <Link>Regions\UpdateRegionsException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\ViewRegistrationException.cs">
+      <Link>Regions\ViewRegistrationException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Desktop\Composite.Presentation\Regions\ViewsCollection.cs">
+      <Link>Regions\ViewsCollection.cs</Link>
+    </Compile>
+    <Compile Include="Events\DefaultDispatcher.Silverlight.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regions\Behaviors\TabControlRegionSyncBehavior.cs" />
+    <Compile Include="Regions\TabControlRegionAdapter.cs" />
+    <Compile Include="Regions\ViewsCollection.Silverlight.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Composite\Composite.Silverlight.csproj">
+      <Project>{CC79289A-2563-40B8-895C-3CDA56BA4956}</Project>
+      <Name>Composite.Silverlight</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Desktop\Composite.Presentation\Properties\Resources.resx">
+      <Link>Properties\Resources.resx</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+      <UserProperties ProjectLinkReference="F807062D-6FC9-4FF0-A9F5-5F94653EDC4D" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

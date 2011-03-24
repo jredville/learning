@@ -1,0 +1,67 @@
+﻿<Window x:Class="Samples.DragDrop.DragCanvasExample"
+									xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+									xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+									Title="DragDrop"
+									Height="300"
+									Width="300"
+									xmlns:DnD="clr-namespace:DnD"
+                  xmlns:local="clr-namespace:Samples.DragDrop"
+									Icon="../icon.png"
+
+    >
+	<Window.Resources>
+    <local:CanvasDragSource x:Key="sourceForDragOp"/>
+    <local:CanvasDropTarget x:Key="targetForDragOp"/>
+  </Window.Resources>
+  <Grid Background="Red" >
+      <Canvas Height="500" Width="500" Name="canvas"
+        Background="BLUE"
+        DnD:DragDropManager.DragSource="{StaticResource sourceForDragOp}"
+        DnD:DragDropManager.DropTarget="{StaticResource targetForDragOp}"
+        >
+        <TextBox Width="50"
+                   Height="50"
+								 
+                   Canvas.Left="200"
+                   Canvas.Top="100"/>
+        <Rectangle Width="50"
+                   Height="50"
+                   Fill="Green"
+                   Canvas.Left="300"
+                   Canvas.Top="400"/>
+        <Button Width="50"
+                   Height="50"
+                   Content="Blue"
+                   Canvas.Left="200"
+                   Canvas.Top="300"/>
+        <Rectangle Width="50"
+                   Height="50"
+                   Fill="Yellow"
+                   Canvas.Left="200"
+                   Canvas.Top="400"/>
+
+        <Ellipse Width="75"
+                 Height="50"
+                 Fill="Yellow"
+                 Canvas.Left="200"
+                 Canvas.Top="200"
+                 Stroke="Black"
+                 StrokeThickness="1"
+                 />
+
+        <ListBox Width="200"
+                 Canvas.Left="300"
+                 Canvas.Top="50">
+          <TextBlock>Hello</TextBlock>
+          <TextBlock>World!</TextBlock>
+          <TextBlock>How</TextBlock>
+          <TextBlock>Are</TextBlock>
+          <TextBlock>You</TextBlock>
+          <TextBlock>?</TextBlock>
+        </ListBox>
+
+
+
+      </Canvas>
+	</Grid>
+</Window>

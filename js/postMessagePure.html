@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Message</title>
+		<script>
+		var abc = 0;
+		window.onload = function() {
+			var iframe = document.createElement("iframe");
+			iframe.id = "iframe1";
+			//iframe.height = 0;
+			//iframe.width = 0;
+			//iframe.style = "visibility: hidden";
+			document.body.appendChild(iframe);
+			var win = iframe.contentWindow;
+			var doc = win.document;
+			doc.open();
+			doc.close();
+			
+			var div = doc.createElement("div");
+			div.id = "diva";
+			div.innerHTML = "start";
+			doc.body.appendChild(div);
+			
+			win.setInterval(function() {
+				abc = 0;
+				doc.getElementById('diva').innerHTML = ".";
+				for(var x = 0; x < 1000; x++) {
+					abc++;
+					doc.getElementById("diva").innerHTML += ".";
+				};
+				win.parent.postMessage(abc, "*");
+			}, 1000);
+			addEventListener("message", function(e) {
+				var n = document.getElementById("notifications");
+				var d = document.createElement("div");
+				d.innerHTML = e.data;
+				n.appendChild(d);
+				document.getElementById("divb").innerHTML = "start";
+			});
+			setInterval(function() {
+				document.getElementById("divb").innerHTML += ".";
+				}, 50);
+				
+			
+			//setTimeout(function(){
+			//	win.postMessage(
+			//		"from parent",
+			//		"*"
+			//		);
+			//}, 50);
+			};
+		</script>
+		<meta charset="utf-8">
+		<style>
+		  article, aside, figure, footer, header, hgroup, 
+		  menu, nav, section, canvas { display: block; }
+		  canvas { border: 1px solid black; }
+		  #error { background:none repeat scroll 0 0 red;
+		float:right;
+		margin:10px;
+		padding:10px;
+		  }
+		</style>
+	</head>
+	<body> 
+		<div id="divb">start</div>
+		<section id="content"></section>
+		<section id="notifications"></section>
+	</body>
+</html>
+

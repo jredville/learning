@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="BasicMVVM.Views.MultipleSelectionView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:Behaviors="clr-namespace:BasicMVVM.Infrastructure.Behaviors"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    <Grid Margin="5" d:DesignWidth="431" d:DesignHeight="353">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="{Binding QuestionText}" Style="{StaticResource QuestionLabelStyle}" />
+        <Image Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource ToolTipImageStyle}">
+            <ToolTipService.ToolTip>
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap">This is a Multiple Selection Question.</TextBlock>
+                    <TextBlock TextWrapping="Wrap"> • Each option of a multiple selection question has its own DataContext property associated to a SelectionViewModel view model.</TextBlock>
+                    <TextBlock TextWrapping="Wrap"> • The SynchronizeSelectedItems behavior binds the selections to the response of the MultipleSelectionViewModel.</TextBlock>
+                    <TextBlock TextWrapping="Wrap"> • The MaxSelections property of the MultipleSelectionQuestionTemplate model, determines the maximum number of selections that can be choosen.</TextBlock>
+                    <TextBlock TextWrapping="Wrap"> • The ValidationSummary control and the ValidateObject behavior are used to show the validation errors.</TextBlock>
+                </StackPanel>
+            </ToolTipService.ToolTip>
+        </Image>
+
+        <Border Grid.ColumnSpan="2" Grid.Row="1" Style="{StaticResource BorderBrush}">
+            <ItemsControl Grid.Column="0" Grid.Row="1" IsTabStop="False"
+                                                          ItemsSource="{Binding Range}" Margin="5">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <CheckBox Content="{Binding Content}" AutomationProperties.AutomationId="CheckBoxAutomationId">
+                            <!-- 
+                                                            This behavior is used to map the Checked/Unchecked state of each check box 
+                                                            to the presence of an element in a collection.
+                                                            -->
+                            <i:Interaction.Behaviors>
+                                <!-- 
+                                                                The binding for the Selections property cannot "escape" the data template, so the
+                                                                view model that happens to be the checkbox's data context exposes a Parent property.
+                                                                -->
+                                <Behaviors:SynchronizeSelectedItems Selections="{Binding Parent.Selections}"/>
+                            </i:Interaction.Behaviors>
+                        </CheckBox>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Border>
+        <sdk:ValidationSummary Grid.ColumnSpan="2" Grid.Row="2">
+            <i:Interaction.Behaviors>
+                <Behaviors:ValidateObject SourceObject="{Binding}"/>
+            </i:Interaction.Behaviors>
+        </sdk:ValidationSummary>
+    </Grid>
+</UserControl>
