@@ -1,5 +1,0 @@
-D:\projects\garage\learning\RX\bin\Debug\Rx40Samples.exe
-D:\projects\garage\learning\RX\bin\Debug\Rx40Samples.pdb
-D:\projects\garage\learning\RX\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\projects\garage\learning\RX\obj\x86\Debug\Rx40Samples.exe
-D:\projects\garage\learning\RX\obj\x86\Debug\Rx40Samples.pdb

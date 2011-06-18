@@ -1,1 +1,0 @@
-@call "StockTrader RI\StockTraderRI.sln"
